@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.profile-box {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 330px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: url('https://via.placeholder.com/80') center center/cover;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  border: 2px solid #ddd;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px 0;
+  background-color: #fefefe;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.info-item:hover {
+  background: #f2f2f2;
+}
+
+.value {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.label {
+  font-size: 13px;
+  color: #555;
+}
+
+.output-area {
+  margin-top: 10px;
+  min-height: 50px;
+  text-align: center;
+}
+
+.link-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+}
+
+@keyframes surprise {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+.surprise-text {
+  animation: surprise 0.5s ease-out;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
